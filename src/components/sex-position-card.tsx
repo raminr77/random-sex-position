@@ -1,3 +1,4 @@
+import { SEX_LEVELS } from "../constants/filters";
 
 interface SexPositionCardProps {
     id: number;
@@ -8,9 +9,9 @@ interface SexPositionCardProps {
 }
 
 const BADGE_COLORS: Record<string, string> = {
-    Safe: 'bg-green-500',
-    Dangerous: 'bg-orange-500',
-    'Be careful': 'bg-red-500'
+    [SEX_LEVELS.SAFE]: 'bg-green-500',
+    [SEX_LEVELS.BE_CAREFUL]: 'bg-red-500',
+    [SEX_LEVELS.DANGEROUS]: 'bg-orange-500'
 };
 
 export function SexPositionCard({
