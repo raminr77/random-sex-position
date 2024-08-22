@@ -2,11 +2,8 @@ import os
 import json
 import requests
 import unicodedata
-from datetime import datetime
-# Install BeautifulSoup
 from bs4 import BeautifulSoup
-
-index = 0
+from datetime import datetime
 
 # FUNCTIONS
 def imageDownloader(url, name = 'image'):
@@ -39,16 +36,18 @@ def getImagesByPageNumber(pageNumber = 1):
         imageAlt = convertUnicodeToText(image['alt'].replace(' Kamasutra - Photo, picture, image', ''))
 
         fileName = title.lower().replace(' ', '-') + '.png'
+        imageId = int(fileName[:fileName.index('-')])
         imageDownloader(imageSrc, fileName)
 
         images.append({
-            'id': int(index + 1),
+            'id': imageId,
             'title': title[title.index(' ') + 1:],
             'level': level,
             'fileName': fileName,
             'imageAlt': imageAlt,
             'originalSrc': imageSrc
         })
+        print('Image {} Generated.'.format(imageId))
     return images;
 
 
