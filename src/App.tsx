@@ -48,8 +48,8 @@ function App() {
   };
 
   return (
-    <div className='h-screen flex items-center justify-center w-full flex-col gap-4'>
-      <h3 className='text-2xl lato-bold text-slate-600'>Random Sex Position</h3>
+    <div className='flex items-center justify-center w-full flex-col gap-4 p-5'>
+      <h3 className='text-2xl lato-bold mt-10 mb-4 text-purple-600'>Random Sex Position</h3>
 
       {randomNumber ? (
         <SexPositionCard
@@ -60,11 +60,13 @@ function App() {
           imageAlt={filteredData[randomNumber].imageAlt}
         />
       ) : (
-        <img alt='Random Sex Position' src='images/positions/0-preview.png' />
+        <SexPositionCard
+          fileName="0-preview.png"
+        />
       )}
 
       {/* FILTER */}
-      <div className='flex flex-col gap-3 text-slate-700 rounded-md bg-slate-100 py-3 px-5 shadow-md'>
+      <div className='flex flex-col gap-3 text-slate-700 rounded-md bg-slate-50 py-3 px-5 shadow-md'>
         <h5 className='text-sm'>Filter your result with sex levels</h5>
         <div className='flex items-center justify-center gap-3'>
           {Object.values(SEX_LEVELS).map((level) => (
@@ -90,21 +92,23 @@ function App() {
       {/* ACTIONS */}
       <div className='flex items-center justify-center gap-3'>
         <button
+          onClick={handleReset}
+          disabled={randomNumber === null}
+          style={randomNumber === null ? { opacity: 0.3, pointerEvents: 'none' } : {}}
+          className='bg-slate-400 hover:bg-slate-500 duration-300 text-white rounded-md shadow-md hover:shadow-lg leading-8 px-4 py-1'
+        >
+          Reset
+        </button>
+
+        <button
           onClick={handleRandomButton}
           className='bg-purple-600 hover:bg-purple-700 duration-300 text-white rounded-md shadow-md hover:shadow-lg leading-8 px-4 py-1'
         >
           New Position
         </button>
-
-        {randomNumber !== null && (
-          <button
-            onClick={handleReset}
-            className='bg-slate-400 hover:bg-slate-500 duration-300 text-white rounded-md shadow-md hover:shadow-lg leading-8 px-4 py-1'
-          >
-            Reset
-          </button>
-        )}
       </div>
+
+      <br />
     </div>
   )
 }
