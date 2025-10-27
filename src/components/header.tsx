@@ -3,7 +3,7 @@ const GitHubStarsBadgeURL =
 
 export function Header() {
   return (
-    <header className="flex flex-col items-center gap-4 my-5">
+    <header className="w-full flex flex-col items-center gap-4 my-5">
       <h3 className="text-2xl lato-bold">Random Sex Position</h3>
       <img alt="GitHub Repo stars" src={GitHubStarsBadgeURL} />
     </header>

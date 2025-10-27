@@ -8,7 +8,17 @@ import {
 
 export function App() {
   return (
-    <div className="w-11/12 max-w-xl flex items-center justify-center w-full flex-col gap-4 p-5">
+    <div
+      style={{ width: "90%" }}
+      className="flex items-center justify-center w-full flex-col gap-4 p-5 relative mx-auto max-w-2xl"
+    >
+      <img
+        alt=""
+        loading="lazy"
+        src="images/background.png"
+        className="fixed top-0 left-0 opacity-50 blur-sm"
+      />
+
       {/* HEADER */}
       <Header />
 
