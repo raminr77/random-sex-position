@@ -1,10 +1,10 @@
+@use "fonts.scss";
+@use "./animate.min.css";
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -12,10 +12,3 @@ body {
   user-select: none;
   scroll-behavior: smooth;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import 'fonts';
-@import './animate.min.css';
