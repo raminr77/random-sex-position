@@ -1,6 +1,7 @@
 import { SEX_LEVELS } from "@/constants";
-
 import { useActions } from "@/hooks";
+
+import { LikeButton } from "./like-button";
 
 const BADGE_COLORS: Record<string, string> = {
   [SEX_LEVELS.SAFE]: "bg-green-500",
@@ -35,6 +36,12 @@ export function SexPositionCard() {
         >
           {level.toUpperCase()}
         </span>
+      )}
+
+      {!!id && (
+        <div className="left-5 top-5 absolute">
+          <LikeButton id={id} />
+        </div>
       )}
 
       <img alt={imageAlt} src={`images/positions/${fileName}`} />

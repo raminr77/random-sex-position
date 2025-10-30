@@ -8,13 +8,13 @@ export function Actions() {
     useActions();
 
   const handleRandomButton = useCallback(() => {
-    const nextPositionId = getRandomNumber(0, filteredData.length - 1);
-    setPositionId(nextPositionId);
+    const nextIndex = getRandomNumber(0, filteredData.length - 1);
+    setPositionId(filteredData[nextIndex].id);
   }, [filteredData]);
 
   const disabledResetButton = positionId === 0 && filters.length === 0;
   return (
-    <div className="w-full flex items-center justify-center gap-3">
+    <div className="w-full flex items-center justify-center gap-3 z-10">
       <button
         onClick={resetFilters}
         disabled={disabledResetButton}

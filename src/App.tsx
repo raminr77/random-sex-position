@@ -3,6 +3,7 @@ import {
   Header,
   Filters,
   Actions,
+  FavoriteList,
   SexPositionCard,
 } from "@/components";
 
@@ -15,8 +16,9 @@ export function App() {
       <img
         alt=""
         loading="lazy"
+        draggable={false}
         src="images/background.png"
-        className="fixed top-0 left-0 opacity-50 blur-sm"
+        className="fixed top-0 left-0 pointer-events-none opacity-50 blur-sm"
       />
 
       {/* HEADER */}
@@ -24,6 +26,9 @@ export function App() {
 
       {/* SEX POSITION CARD */}
       <SexPositionCard />
+
+      {/* FAVORITE LIST */}
+      <FavoriteList />
 
       {/* FILTER */}
       <Filters />

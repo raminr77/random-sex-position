@@ -7,7 +7,7 @@ export function Filters() {
   const { filters, setFilter } = useActions();
 
   return (
-    <div className="w-full flex flex-col gap-5 text-slate-700 rounded-md bg-slate-100/10 backdrop-blur-sm dark:text-white p-5 shadow-md">
+    <div className="w-full z-10 flex flex-col gap-5 text-slate-700 rounded-md bg-slate-100/10 backdrop-blur-sm dark:text-white p-5 shadow-md">
       <h5 className="text-md text-center">
         Filter your result with sex levels
       </h5>

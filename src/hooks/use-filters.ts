@@ -3,8 +3,9 @@ import { useCallback, useMemo } from "react";
 import { useSearchParams } from "react-router";
 
 import { QUERY_PARAMS_KEYS } from "@/constants";
+import { getRandomNumber } from "@/utils";
 
-import { data, DataItem } from "../../data";
+import { data, type DataItem } from "../../data";
 
 export function useActions() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -46,6 +47,12 @@ export function useActions() {
         searchParams.delete(QUERY_PARAMS_KEYS.FILTERS);
       }
 
+      const nextIndex = getRandomNumber(0, filteredData.length - 1);
+      searchParams.set(
+        QUERY_PARAMS_KEYS.POSITION_ID,
+        filteredData[nextIndex].id.toString()
+      );
+
       setSearchParams(searchParams);
     },
     [filters]
@@ -58,7 +65,9 @@ export function useActions() {
   };
 
   const activePosition = useMemo(() => {
-    return filteredData[positionId] ?? filteredData[0];
+    return (
+      filteredData.find((item) => item.id === positionId) ?? filteredData[0]
+    );
   }, [filters, positionId, filteredData]);
 
   return {
