@@ -23,7 +23,7 @@ export function PositionListCard({
       <img
         alt={imageAlt}
         className="rounded-md w-full"
-        src={`images/positions/${fileName}`}
+        src={`https://ramiiin.ir/random-sex-position/images/positions/${fileName}`}
       />
       <h3 className="flex items-center gap-2 text-slate-950">
         <span>{order}</span>
