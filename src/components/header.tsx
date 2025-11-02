@@ -4,8 +4,10 @@ const GitHubStarsBadgeURL =
 export function Header() {
   return (
     <header className="w-full flex flex-col items-center gap-4 my-5 z-10">
-      <h3 className="text-2xl lato-bold">Random Sex Position</h3>
-      <img alt="GitHub Repo stars" src={GitHubStarsBadgeURL} />
+      <h1 className="text-2xl lato-bold">Random Sex Position</h1>
+      <a href="https://github.com/raminr77/random-sex-position" target="_blank">
+        <img alt="GitHub Repo stars" src={GitHubStarsBadgeURL} />
+      </a>
     </header>
   );
 }

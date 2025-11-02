@@ -1,13 +1,7 @@
-import { SEX_LEVELS } from "@/constants";
 import { useActions } from "@/hooks";
 
 import { LikeButton } from "./like-button";
-
-const BADGE_COLORS: Record<string, string> = {
-  [SEX_LEVELS.SAFE]: "bg-green-500",
-  [SEX_LEVELS.BE_CAREFUL]: "bg-red-500",
-  [SEX_LEVELS.DANGEROUS]: "bg-orange-500",
-};
+import { Level } from "./level";
 
 const DEFAULT_POSITION = {
   id: 0,
@@ -26,17 +20,9 @@ export function SexPositionCard() {
   return (
     <div
       title={title}
-      className="w-full relative bg-white overflow-hidden border-dashed border dark:border-none rounded-lg p-5 flex flex-col items-center justify-center gap-2 text-slate-500 mb-4 animate__animated animate__fadeIn shadow-sm"
+      className="w-full relative bg-white overflow-hidden border-dashed border dark:border-none rounded-lg p-5 flex flex-col items-center justify-center gap-2 text-slate-500 animate__animated animate__fadeIn shadow-sm"
     >
-      {level && (
-        <span
-          className={`${"rounded-md shadow-sm leading-7 px-3 absolute top-5 right-5 text-white text-xs"} ${
-            BADGE_COLORS[level] ?? "bg-slate-200"
-          }`}
-        >
-          {level.toUpperCase()}
-        </span>
-      )}
+      {level && <Level level={level} />}
 
       {!!id && (
         <div className="left-5 top-5 absolute">

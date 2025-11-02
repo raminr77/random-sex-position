@@ -27,14 +27,16 @@ export function App() {
       {/* SEX POSITION CARD */}
       <SexPositionCard />
 
-      {/* FAVORITE LIST */}
-      <FavoriteList />
-
       {/* FILTER */}
       <Filters />
 
       {/* ACTIONS */}
       <Actions />
+
+      {/* FAVORITE LIST */}
+      <FavoriteList />
+
+      <br />
 
       {/* Footer */}
       <Footer />

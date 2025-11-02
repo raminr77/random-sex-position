@@ -57,6 +57,23 @@
     <style>
       @import "tailwindcss";
       @custom-variant dark (&:where(.dark, .dark *));
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: #37474f;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+        background: #e60076;
+      }
     </style>
     <!-- Google Tag Manager -->
     <script>
