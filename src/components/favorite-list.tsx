@@ -84,6 +84,7 @@ export function FavoriteList() {
                 <img
                   width={72}
                   height={72}
+                  loading="lazy"
                   alt={position?.imageAlt}
                   className="w-18 h-18 rounded-md transform duration-300 group-hover:-translate-y-4"
                   src={`images/positions/${

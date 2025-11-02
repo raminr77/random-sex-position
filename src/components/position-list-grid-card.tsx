@@ -13,6 +13,7 @@ export function PositionListGridCard({ position }: { position: DataItem }) {
     >
       <img
         alt={imageAlt}
+        loading="lazy"
         className="w-30 h-25"
         src={`https://ramiiin.ir/random-sex-position/images/positions/${fileName}`}
       />

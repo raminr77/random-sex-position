@@ -30,7 +30,7 @@ export function SexPositionCard() {
         </div>
       )}
 
-      <img alt={imageAlt} src={`images/positions/${fileName}`} />
+      <img loading="lazy" alt={imageAlt} src={`images/positions/${fileName}`} />
 
       <h3 className="mt-4">
         {id ? `Position No: ${id}` : "More Than 500 Sex Positions"}

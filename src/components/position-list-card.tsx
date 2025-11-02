@@ -22,6 +22,7 @@ export function PositionListCard({
       </div>
       <img
         alt={imageAlt}
+        loading="lazy"
         className="rounded-md w-full"
         src={`https://ramiiin.ir/random-sex-position/images/positions/${fileName}`}
       />
