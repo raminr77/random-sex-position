@@ -17,6 +17,9 @@ export function Footer() {
         visits per day.
       </span>
       <span className="text-center">No user data is collected or stored.</span>
+      <span className="text-center">
+        Only anonymous traffic data is processed through Google Analytics.
+      </span>
     </footer>
   );
 }
