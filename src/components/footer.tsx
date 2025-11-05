@@ -12,13 +12,13 @@ export function Footer() {
           Ramin
         </a>
       </p>
-      <span className="text-center">
-        This open-source project was made just for fun and now gets over 6K
-        visits per day.
-      </span>
       <span className="text-center">No user data is collected or stored.</span>
       <span className="text-center">
         Only anonymous traffic data is processed through Google Analytics.
+      </span>
+      <span className="text-center">
+        This open-source project was made just for fun and now gets over 10K
+        uniqe visits per day.
       </span>
     </footer>
   );
