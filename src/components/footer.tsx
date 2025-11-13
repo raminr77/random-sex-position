@@ -17,7 +17,7 @@ export function Footer() {
         Only anonymous traffic data is processed through Google Analytics.
       </span>
       <span className="text-center">
-        This open-source project was made just for fun and now gets over 10K
+        This open-source project was made just for fun and now gets over 131K
         uniqe visits per day.
       </span>
     </footer>
