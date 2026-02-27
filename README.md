@@ -6,7 +6,7 @@ This repository provides a fun way to explore random sex positions using data fr
 
 Developer: [Ramin](https://raminrezaei.ir)
 
-[Click To See Your Position 😈](https://raminrezaei.ir/random-sex-position/)
+[Click To See Your Position 😈](https://ramiiin.ir/random-sex-position/)
 
 ### License
 
