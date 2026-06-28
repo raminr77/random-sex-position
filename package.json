@@ -1,7 +1,7 @@
 {
   "name": "random-sex-position",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Ramin",
   "type": "module",
   "license": "MIT",
@@ -14,30 +14,30 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.2.1",
+    "@tailwindcss/vite": "^4.3.1",
     "clsx": "^2.1.1",
-    "qs": "^6.15.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router": "^7.13.1",
+    "qs": "^6.15.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router": "^7.18.0",
     "react-switch": "^7.1.0",
-    "tailwindcss": "^4.2.1"
+    "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@types/qs": "^6.14.0",
-    "@types/react": "^19.2.14",
+    "@types/qs": "^6.15.1",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.4",
-    "eslint": "^10.0.2",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.3.0",
-    "sass-embedded": "^1.97.3",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.1",
-    "vite": "^7.3.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "sass-embedded": "^1.100.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vite": "^7.3.6",
     "vite-tsconfig-paths": "^6.1.1"
   },
-  "packageManager": "pnpm@10.30.3"
+  "packageManager": "pnpm@11.9.0"
 }
